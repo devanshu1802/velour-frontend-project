@@ -48,8 +48,9 @@ const Home = ({ onSubscribe }) => {
       img.src = `/images/heroAnimation/Chocolate_unwrapping_exploding_202604191801_${frameNum}.jpg`;
       img.onload = () => {
         loadedCount++;
-        if (loadedCount === 1) drawFrame(0);
-        if (loadedCount === frameCount) {
+        // Draw the frame if it's the first one, and hide the preloader immediately
+        if (i === 0) {
+          drawFrame(0);
           setIsLoaded(true);
         }
       };
