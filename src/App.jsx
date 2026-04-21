@@ -186,6 +186,7 @@ function App() {
   return (
     <CartProvider>
       <MainApp />
+      <Analytics />
     </CartProvider>
   );
 }
