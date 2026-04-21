@@ -45,7 +45,7 @@ const Home = ({ onSubscribe }) => {
     for (let i = 0; i < frameCount; i++) {
       const img = new Image();
       const frameNum = i.toString().padStart(3, '0');
-      img.src = `/images/heroAnimation/Chocolate_unwrapping_exploding_202604191801_${frameNum}.jpg`;
+      img.src = `/images/heroAnimation/Chocolate_unwrapping_exploding_202604191801_${frameNum}.webp`;
       img.onload = () => {
         loadedCount++;
         // Draw the frame if it's the first one, and hide the preloader immediately
