@@ -8,7 +8,7 @@ import CustomCursor from './components/CustomCursor';
 import Toast from './components/Toast';
 import ScrollProgress from './components/ScrollProgress';
 import BackToTop from './components/BackToTop';
-import { Analytics } from "@vercel/analytics/next";
+import { Analytics } from "@vercel/analytics/react";
 
 const Navbar = ({ currentView, navigateTo, theme, toggleTheme, handleSmoothScroll }) => {
   const [scrolled, setScrolled] = useState(false);
